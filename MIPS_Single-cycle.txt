@@ -1,0 +1,27 @@
+Instructions for MIPS16
+
+R-type Instructions:
+
+1.Addition              | add |  000_sss_ttt_ddd_0_000
+2.Substraction          | sub |  000_sss_ttt_ddd_0_001
+3.Shift Left Logical    | sll |  000_sss_ttt_ddd_1_010
+4.Shift Right Logical   | srl |  000_sss_ttt_ddd_1_011
+5.Logical AND           | and |  000_sss_ttt_ddd_0_100
+6.Logical OR            | or  |  000_sss_ttt_ddd_0_101
+7.Logical XOR           | xor |  000_sss_ttt_ddd_0_110
+8.Set on less than      | slt |  000_sss_ttt_ddd_0_111
+
+
+I-type Instructions:
+
+1.Add Immediate         | addi | 001_sss_ttt_iii_i_iii
+2.Load Word             |  lw  | 010_sss_ttt_iii_i_iii
+3.Strore Word           |  sw  | 011_sss_ttt_iii_i_iii
+4.Branch on Equal       | beq  | 100_sss_ttt_iii_i_iii
+5.Bitwise XOR immediate | xori | 101_sss_ttt_iii_i_iii
+6.Branch on not Equal   | bne  | 110_sss_ttt_iii_i_iii
+
+
+J-type Instruction
+
+Jump                    |  j   | 111_iii_iii_iii_i_iii
